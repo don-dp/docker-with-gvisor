@@ -9,7 +9,7 @@ app.config['DEBUG'] = os.environ.get('FLASK_ENV') == 'development'
 @app.route('/hello', methods=['GET'])
 def hello():
     debug_mode = 'on' if app.debug else 'off'
-    return {'message': 'Updated on october 22', 'debug': debug_mode}
+    return {'message': 'Updated on feb 10 2024', 'debug': debug_mode}
 
 @app.route('/runfunction/<session_id>', methods=['POST'])
 def run_function(session_id):

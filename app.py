@@ -25,8 +25,8 @@ def run_function(session_id):
 
 @app.route('/runfunction_sync/<session_id>', methods=['POST'])
 def run_function_sync(session_id):
-    if not app.debug:
-        return jsonify({'error': 'Endpoint only available in debug mode'}), 403
+    #if not app.debug:
+    #    return jsonify({'error': 'Endpoint only available in debug mode'}), 403
 
     token = request.headers.get('Authorization')
     if not token:
